@@ -18,3 +18,7 @@ Before you run the client, be sure you have these downloaded/installed on your m
 - mqtt-realtime-chart-client
 - Moquette (MQTT broker) (or any other MQTT broker that listens on port 8883)
   - If using Moquette, be sure to have Java JDK installed (tested with JDK 8)
+
+# How to run the project
+
+Issue command `npm start`
