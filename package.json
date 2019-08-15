@@ -1,0 +1,39 @@
+{
+  "name": "mqtt-socket-io",
+  "version": "1.0.0",
+  "description": "This project demostrate how mqtt interact with socket io for Real-time information",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "./node_modules/nodemon/bin/nodemon.js node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielChuDC/mqtt-socket-io.git"
+  },
+  "keywords": [
+    "socket.io",
+    "express",
+    "realtime-communication"
+  ],
+  "author": "DanielChu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielChuDC/mqtt-socket-io/issues"
+  },
+  "homepage": "https://github.com/DanielChuDC/mqtt-socket-io#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mqtt": "^2.18.8",
+    "nodemon": "^1.18.9",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
