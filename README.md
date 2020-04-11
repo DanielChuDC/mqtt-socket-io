@@ -23,4 +23,8 @@ Before you run the client, be sure you have these downloaded/installed on your m
 
 Issue command `npm start`
 
-#
+# Integrated with socket io
+
+# Show the result on html based on socket IO
+
+

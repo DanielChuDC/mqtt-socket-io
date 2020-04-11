@@ -11,7 +11,7 @@ class MqttHandler {
     console.log(process.env.mqtt_host);
   }
 
-  connect() {
+  connect(topic) {
     // Connect mqtt with credentials (in case of needed, otherwise we can omit 2nd param)
     this.mqttClient = mqtt.connect(this.host, { username: this.username, password: this.password });
 
@@ -29,7 +29,7 @@ class MqttHandler {
     });
 
     // mqtt subscriptions
-    this.mqttClient.subscribe('world', { qos: 2 });
+    this.mqttClient.subscribe(topic, { qos: 2 });
 
     // When a message arrives, console.log it
     this.mqttClient.on('message', function(topic, message) {
@@ -43,8 +43,8 @@ class MqttHandler {
 
   // Sends a mqtt message to topic: mytopic
   // Make Options , Quality of service level = 2
-  sendMessage(message) {
-    this.mqttClient.publish('world', message, {
+  sendMessage(topic, message) {
+    this.mqttClient.publish(topic, message, {
       qos: 2,
       retain: false,
       dup: false
